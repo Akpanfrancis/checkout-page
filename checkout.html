@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 70%;
+            margin-left: 20%;
+        }
+
+        img{
+            border-radius: 15%;
+        }
+
+        .first_section{
+            border: solid;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            width:40%;
+            height: 70vh;
+            margin-left: 385px;
+            padding: 10px;
+            background-color: azure;
+        }
+
+        .section_two{
+            display: flex;
+            flex-direction: column;
+            width: 29%;
+            height: 80vh;
+            position: absolute;
+            top: 30px;
+        }
+
+        .first_div{
+            height: 25vh;
+            
+        }
+
+        .second_div{
+            height: 35vh;
+        }
+
+        .third_div{
+            height: 17vh;
+        }
+        .first_div input{
+            display: flex;
+            flex-direction: column;
+            border: solid;
+            border-radius: 5px;
+            width: 95%;
+            height: 5vh;
+        }
+
+        .second_div input{
+            display: flex;
+            flex-direction: column;
+            border: solid;
+            border-radius: 5px;
+            width: 95%;
+            height: 5vh;
+        }
+
+        .third_div input, select{
+            display: flex;
+            flex-direction: column;
+            border: solid;
+            border-radius: 5px;
+            width: 95%;
+            height: 5vh;
+        }
+
+        .check{
+            margin-top: 70px;
+            width: 20%;
+            height: 5vh;
+            background-color: tomato;
+            color: white;
+            border-radius: 5px;
+            margin-left: 100px;
+        }
+
+        .tip{
+
+        }
+    </style>
+<body>
+    <header>
+        <h2>Checkout</h2>
+    </header>
+    <main>
+        <section class="first_section">
+            <div class="photo_div">
+                <img src="./photo1.png" alt="" width="100">
+                <p>Vintage Backbag</p>
+                <p>$54.99</p>
+                <p>$94.99</p>
+                <button>-</button> 1 <button>+</button>
+            </div>
+            <div>
+                <img src="./photo2.png" alt="" width="100">
+                <p>Levi Shoes</p>
+                <p>$74.99</p>
+                <p>$124.99</p>
+                <button>-</button> 1 <button>+</button>
+            </div>
+            <div>
+                <p>Shipping</p>
+                <p>$19</p>
+                <p>Total</p>
+                <p>$148.98</p>
+            </div>
+        </section>
+        <section class="section_two">
+            <div class="first_div">
+                <h3>Contact Information</h3>
+                <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i>Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email...">
+                <label for="Phone"><i class="fa fa-phone" aria-hidden="true"></i>Phone</label>
+                <input type="text" id="Phone" name="Phone" placeholder="Enter your phone...">
+            </div>
+            <div class="second_div">
+                <h3>Shipping address</h3>
+                <label for="name"><i class="fa fa-user-circle" aria-hidden="true"></i>Full name</label>
+                <input type="text" id="Name" name="Name" placeholder="Rodney Cotton">
+                <label for="address"><i class="fa fa-home" aria-hidden="true"></i>Address</label>
+                <input type="text" id="Address" name="Address" placeholder="Your address">
+                <label for="city"><i class="fa fa-building" aria-hidden="true"></i>City</label>
+                <input type="text" id="City" name="City" placeholder="Your city">
+            </div>
+            <div class="third_div">
+                <label for="country"><i class="fa fa-globe" aria-hidden="true"></i>Country</label>
+                <select type="" id="country" name="country" placeholder="Your country">
+                    <option value="USA"></option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="south Africa">South Africa</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Chat Republic">Chat Republic</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Benin">Benin</option>
+                </select>
+                <label for="postal"><i class="fa fa-clipboard" aria-hidden="true"></i>Postal code</label>
+                <input type="text" id="postal" name="postal" placeholder="Your postal code">
+            </div>
+            <div>
+                <input type="checkbox" id="door">Save this information for next time
+            </div>
+        </section>
+        <button class="check">continue</button>
+    </main>
+</body>
+</html>
